@@ -1,0 +1,8 @@
+name: Deployment workflow
+on: issues
+jobs:
+  display-info:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Print info
+          run: echo ${{ github.event.issue.title }}
